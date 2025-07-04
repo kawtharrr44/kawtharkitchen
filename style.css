@@ -1,0 +1,166 @@
+/* style.css — Kawthar's Girly Kitchen Theme */
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff0f6;
+  color: #4a148c;
+  line-height: 1.6;
+  padding-bottom: 60px;
+}
+
+/* Header styling */
+header {
+  background: #f8bbd0;
+  text-align: center;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  color: #880e4f;
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+}
+
+/* Navigation styling */
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #ad1457;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #6a1b9a;
+  text-decoration: underline;
+}
+
+/* Main layout */
+main {
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 192, 203, 0.3);
+}
+
+/* Section Titles */
+section h2 {
+  font-size: 1.7rem;
+  color: #6a1b9a;
+  margin-bottom: 12px;
+}
+
+/* Text styles */
+p, ul {
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+  color: #4a148c;
+}
+
+/* Gallery styling */
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery-img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: 15px;
+  border: 3px solid #f48fb1;
+  box-shadow: 0 0 15px rgba(244, 143, 177, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+/* Forms */
+form {
+  background: #fce4ec;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 0 12px rgba(255, 105, 180, 0.2);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  margin-bottom: 16px;
+  border: 1px solid #e91e63;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #4a148c;
+}
+
+button {
+  background: #ec407a;
+  color: white;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #c2185b;
+}
+
+/* Video & Audio */
+iframe, audio {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f8bbd0;
+  color: #6a1b9a;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+  margin-top: 50px;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  main {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .gallery-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
